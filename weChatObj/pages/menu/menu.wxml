@@ -1,0 +1,72 @@
+<!--pages/menu/menu.wxml-->
+<view class='page'>
+  <view class='page-bd'>
+    <view class='welcome'>
+      <view class='welcome_info'>
+        欢迎 <text>{{us.nickName}}</text>
+        <!-- <image src='/images/logo.png'> </image> -->
+      </view>
+    </view>
+    
+    <view class='weui-tab'>
+      <!-- 显示商品分类begin -->
+      <view class='weui-navbar' style='position:{{positionValue}};top:{{topValue}}rpx;'>
+        <!-- 数据渲染 -->
+        <block wx:for="{{menudto.goodstypelist}}" wx:key="item">
+          <view id='{{item.gtid}}' class="weui-navbar__item {{activeIndex == index+1 ? 'weui-bar__iten_on':''}}" bindtap='tabClick'>
+            <view class='weui-navbar__title'>{{item.gtname}}</view>
+          </view>
+        </block>
+        <view class='weui-navbar__slider' style="left:{{sliderLeft}}px;transform:translateX({{sliderOffset}}px)"></view>
+      </view>
+      <!-- 显示商品分类end -->
+
+      <!-- 分类商品列表tab显示 begin -->
+      <view class='weui-tab_panel'>
+        <block wx:for="{{menudto.goodstypelist}}" wx:key="item">
+          <view class='weui-tab__content' hidden='{{activeIndex != item.gtid}}'>
+            <!-- 商品分类列表 -->
+            <block wx:for="{{menudto.goodslist}}" wx:key="item">
+              <view class='menu-list' wx:if="{{item.gtid==activeIndex}}">
+              <!-- <view > -->
+                <view class='menu-img'>
+                  <image src='{{serveraddr}}/file/{{item.gimg}}' data-gprice="{{item.gprice}}" data-gid="{{item.gid}}" data-gname="{{item.gname}}" data-gimg="{{item.gimg}}" data-gcontent="{{item.gcontent}}" data-gtime="{{item.gtime}}" bindtap='showDetails'/>
+                  <!-- <image src='/images/{{item.gimg}}'  data-gprice="{{item.gprice}}" data-gid="{{item.gid}}" data-gname="{{item.gname}}" data-gimg="{{item.gimg}}" data-gcontent="{{item.gcontent}}" data-gtime="{{item.gtime}}" bindtap='showDetails'></image> -->
+                </view>
+                <view class='menu-content'>
+                  <text class='food-title'>{{item.gname}}</text>
+                  <view class='food-msg'><text>{{item.gcontent}}</text></view>
+                  <view class='menu-price'>
+                    <view class='price'>
+                      <text style='color:#c7002b'>￥</text>
+                      <text class='red-price'>{{item.gprice}}</text> / 1份
+                      <text>原价 : <text style='text-decoration:line-through'>{{item.gprice}}</text></text>
+                    </view>
+                    <view class='buttons'>
+                      <view class='button-jian' data-gtid="{{item.gtid}}" data-gprice="{{item.gprice}}" data-gid="{{item.gid}}"  data-gname="{{item.gname}}" data-gimg="{{item.gimg}}" bindtap='buttonsub'>-</view>
+                      <input id='num{{item.gid}}' type='number' disabled value='{{item.gcount}}'></input>
+                      <view class='button-jia' data-gtid="{{item.gtid}}" data-gprice="{{item.gprice}}" data-gid="{{item.gid}}" data-gname="{{item.gname}}" data-gimg="{{item.gimg}}"  bindtap='buttonadd'>+</view>
+                    </view>
+                  </view>
+                <!-- </view> -->
+                </view>
+              </view>
+            </block>
+          </view>
+          <!-- 显示商品列表 end -->
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <view class='goshop-box'>
+    <view class='shop-img'>
+        <image src='/images/shop.png'></image>
+        <view class='weui-badge' style='position:absolute;top:0em;right:-0.5em'>{{shopNum}}</view>
+    </view>
+    <text class='order-price'>￥{{totalprice}}</text>
+    <text class='order-old'>￥{{totalprice}}</text>
+    <view class='goOrder' bindtap='addorder' data-shopNum="{{shopNum}}" data-totalprice="{{totalprice}}" data-orderList="{{newOrder}}">提交订单</view>
+    <!-- <view class='goOrder' bindtap='addorder' data-list="{{gtlist}}" data-shopNum="{{shopNum}}" data-totalprice="{{totalprice}}" data-nameList="{{newName}}" data-orderList="{{newOrder}}">下订单</view> -->
+  </view>
+</view>

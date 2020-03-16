@@ -1,0 +1,66 @@
+/* pages/pay/pay.wxss */
+page{
+  height: 100%;
+  background-color: rgb(235, 235, 235)
+}
+.page-top{
+  height: 100%;
+}
+.page-content{
+  height: auto;
+  background: #fff;
+  margin: 0 10px 6px 10px;
+}
+.list-bottom{
+  font-size: 26rpx;
+  text-align: left;
+  line-height: 80rpx;
+  background: #fff;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.list-bottom view{
+  font-size: 34rpx;
+}
+.list-bottom text{
+  /* margin-left: 215px; */
+  margin-right: 20px;
+  font-size: 34rpx;
+  color: #c7002b
+}
+.line{
+  border-bottom: 1rpx solid #ccc
+}
+.pay-choose{
+  font-size: 28rpx;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  /* color: #333; */
+}
+.pay-content{
+  height: auto;
+  background: #fff;
+  margin: 0 10px 6px 10px;
+}
+.list-pay image{
+  margin: 16rpx 0rpx 0rpx 22rpx;
+  width: 188rpx;
+  height: 50rpx;
+}
+.bottom-pay{
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: left;
+  line-height: 80rpx;
+  background: #c7002b;
+  color: #fff;
+  border-top: 1rpx solid rgb(196, 196, 196);
+  border-radius: 20rpx;
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+.bottom-pay view{
+  text-align: center;
+  margin: 0rpx 30rpx
+}

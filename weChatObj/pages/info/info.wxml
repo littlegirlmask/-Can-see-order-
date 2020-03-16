@@ -1,0 +1,20 @@
+<!-- <text>pages/info/info.wxml</text> -->
+<view class='page'>
+    <view class='page-top'>
+    </view>
+
+    <view class='info-content'>
+      <view class='list-img'>
+        <image src='{{serveraddr}}/file/{{gimg}}'></image>               
+      </view>
+         <view class='foodName'>{{gname}}</view>
+         <view class='foodInfo'>{{gcontent}}</view>
+        <view class='sales'>
+            月销量: <text>24</text>份
+            剩余: <text>8</text>份
+        </view>
+        <view class='price'>￥{{gprice}}</view>
+    </view>
+
+
+</view>

@@ -1,0 +1,13 @@
+<!--pages/payResult/payResult.wxml-->
+<!-- <text>pages/payResult/payResult.wxml</text> -->
+<view class='page'>
+  <view class='pay-result'>
+    <image src='/images/success.png'></image>
+    <view>
+      您已经成功支付
+    </view>
+    <view>
+      <text>￥{{sum}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+/* pages/payResult/payResult.wxss */
+page{
+  height: 100%;
+  background-color: #fff
+}
+.pay-result image{
+  /* margin: 16rpx 0rpx 0rpx 22rpx; */
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 50px;
+  margin-left: 43%;
+}
+.pay-result view{
+  text-align: center;
+}
+.pay-result text{
+  text-align: center;
+}

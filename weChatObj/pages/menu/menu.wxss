@@ -1,0 +1,210 @@
+/* pages/menu/menu.wxss */
+page{
+  height: 100%
+}
+.page{
+  height: 100% !important;
+  position: relative;
+}
+
+.welcome_tab{
+  width: 40px;
+  border-bottom:  1rpx solid rgb(146, 146, 146);
+}
+
+.welcome{
+  text-align: center;
+  height: 70rpx;
+  border-bottom:  1rpx solid rgb(146, 146, 146);
+  color: #000;
+  background: white;
+  padding-top: 15rpx;
+}
+.welcome_info{
+  margin-left: 60rpx;
+  border-radius: 30rpx;
+  height: 30px;
+  width: 250rpx;
+  border:  1rpx solid rgb(146, 146, 146);
+}
+.welcome_info>text{
+  font-weight: bold;
+  color: #000;
+}
+/* .welcome_info>image{
+  width: 76rpx;
+  height: 76rpx;
+  margin-left: 570rpx;
+  margin-top: -600rpx;
+} */
+.weui-navbar{
+  box-shadow: 1px 1px 2px rgb(218, 218, 218);
+  color: #000;
+  height: 45px;
+  background: white
+}
+
+.weui-tab__content{
+  background-color: #ebebeb;
+  overflow: hidden;
+  position: relative;
+}
+.weui-tab__content .menu-list:first-child{
+  margin-top: 100rpx;
+}
+.weui-tab__content .menu-list:last-child{
+  margin-bottom: 100rpx;
+}
+.menu-list{
+  width: 710rpx;
+  height: 250rpx;
+  background: #fff;
+  border: 1rpx solid rgb(236, 236, 236);
+  display: flex;
+  flex-direction: row;
+  border-radius: 15rpx;
+  margin-left: 20rpx;
+  margin-right: 20px;
+  margin-top: 20rpx;
+}
+.menu-list .menu-img{
+  width: 220rpx;
+  height: 220rpx;
+  margin:15rpx;
+}
+.menu-img image{
+  width: 100%;
+  height: 100%;
+}
+
+.menu-content{
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+  width: 500rpx;
+}
+.menu-content .food-title{
+  font-size: 32rpx;
+  /* 字体加粗 */
+  font-weight: bold;
+  color:#333;
+  line-height: 60rpx;
+  margin-top: 12rpx;
+}
+.food-msg{
+  color: #585858;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.food-msg text{
+  width: 100%;
+  height: 40rpx;
+  display: inline-block;
+  margin-right: 20rpx;
+  overflow: hidden
+}
+.menu-price{
+  height: 90rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.menu-price .price{
+  font-size: 24rpx;
+  color: #585858;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.price>text:last-child{
+  display: block
+}
+.red-price{
+  font-size: 30rpx;
+  color: #c7002b;
+  font-weight: bold;
+  /* 斜体 */
+  font-style: italic;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 120rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin-right: 10px; 
+}
+.buttons view{
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 15%;
+  font-weight: bold;
+}
+.buttons input{
+  font-size: 24rpx;
+  width: 60rpx;
+  height: 40rpx;
+  margin-right: 4px;
+}
+.button-jia{
+  line-height: 35rpx;
+  background: #b8b8b8;
+  /* border: 1rpx solid #c7002b */
+}
+.button-jian{
+  line-height: 35rpx;
+  background: #dadada;
+  /* border: 1rpx solid #ccc */
+}
+.goshop-box{
+  /* 固定定位 */
+  position: fixed;
+  bottom: 2rpx;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+  height: 90rpx;
+  width: 750rpx;
+
+  background: #211717;
+
+}
+.shop-img{
+  height: 100rpx;
+  width: 100rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 40rpx;
+}
+.shop-img image{
+  width: 100%;
+  height: 100%
+}
+.order-price{
+  color: #fff;
+  margin-left: 150rpx;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  padding: 0rpx 15rpx;
+}
+.order-old{
+  color: #ccc;
+  font-size: 28rpx;
+  /* 删除线 */
+  text-decoration: line-through;
+  line-height: 100rpx;
+}
+.goOrder{
+   background: #c7002b;
+   position: absolute;
+   right: 0;
+   width: 200rpx;
+   line-height: 90rpx;
+   text-align: center;
+   color: #fff;
+   font-weight: bold;
+}

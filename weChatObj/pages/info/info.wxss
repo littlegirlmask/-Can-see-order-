@@ -1,0 +1,45 @@
+/* pages/info/info.wxss */
+page{
+  height: 100%;
+  background-color: rgb(235, 235, 235)
+}
+.info-content{
+  height: auto;
+  background: #fff;
+  margin: 10px 10px 6px 10px;
+  border-radius: 20rpx;
+}
+.list-img{
+  width: 650rpx;
+  height: 650rpx;
+  margin-left: 35rpx;
+}
+.list-img image{
+  width: 100%;
+  height: 100%;
+}
+.foodName{
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 32rpx;
+  width: 630rpx;
+  padding: 10rpx 40rpx;
+  color: #333;
+}
+.foodInfo{
+  font-size: 26rpx;
+  width: 630rpx;
+  padding: 10rpx 40rpx;
+  color: rgb(119, 119, 119);
+}
+.sales{
+  font-size: 24rpx;
+  width: 630rpx;
+  padding: 10rpx 40rpx;
+  color: rgb(119, 119, 119);
+}
+.price{
+  font-size: 32rpx;
+  color: #c7002b;
+  padding: 10rpx 40rpx;
+}

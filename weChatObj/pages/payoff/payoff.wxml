@@ -1,0 +1,55 @@
+<!--pages/payoff/payoff.wxml-->
+<view class='page'>
+  <!-- <view class='content'>
+    <view class='title'>确认付款</view>
+    <text>￥{{sum}}</text>
+    <view class='info'>
+      <text class='xiaoxi'>订单信息</text>
+      <text>聚贤轩点餐外卖订单</text>
+    </view>
+    <view class='style'>
+      <text class='xiaoxi'>付款方式</text>
+      <text>零钱</text>
+    </view>
+    <view class='btn_payoff' bindtap='immediatelyPayOff'>
+      <text>立即付款</text>
+    </view>
+  </view> -->
+  <view class='page-top'>
+    </view>
+
+    <view class='page-content'>
+       <view class='list-bottom'>
+          <view>
+            看得见点餐通用优惠券30元
+            <view class='line'></view>
+          </view>
+          <view>
+            原价: <text>￥{{sum}}</text>
+            <view class='line'></view>
+          </view>
+          <view>
+            支付金额: <text>￥{{sum}}</text>
+          </view>
+       </view>
+    </view>
+
+    <view class='pay-choose'>选择支付方式</view>
+
+    <view class='pay-content'>
+       <view class='list-pay'>
+          <view>
+            <image src='/images/wechatpay.jpg'></image>
+            <!-- <view class='line'></view> -->
+          </view>
+
+       </view>
+    </view>
+
+
+    <view class='bottom-pay'>
+       <view bindtap='payResult' data-sum="{{sum}}" data-id="{{orderid}}">
+         确认支付
+       </view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/menu/menu",
+    "pages/queue/queue",
+    "pages/payoff/payoff",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/details/details",
+    "pages/payResult/payResult"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "211717",
+    "navigationBarTitleText": "欢迎使用看得见点餐系统",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

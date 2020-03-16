@@ -1,0 +1,38 @@
+<!-- <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' class='btn_shop'>
+  <text>立即点餐</text>
+</button> -->
+
+<!-- 设置启动界面 -->
+<view class='container'>
+  <!-- 加载开始 -->
+  <view class='remind-box' wx:if="{{}}">
+    <image class='remind-img' src='/images/loading.gif'></image>
+  </view>  
+  <!-- 加载结束 -->
+  <block wx:else>
+    <image class='logo' src='/images/主页.jpg'></image>
+  </block>
+  <view class='content'>
+    <view class='mid-box'>
+      <view class='avatar'>
+        <!-- 获取头像 -->
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <!-- 设置波浪线 -->
+      <image class='wave' src='/images/wave.png'></image>
+      <image class='wave wave-bg' src='/images/wave.png'></image>
+    </view>
+    
+    <view class='bottom-box'>
+
+    <swiper indicator-dots='true' autoplay='true' interval='2000'>
+      <swiper-item><image src='/images/banner1.png' class='ader'></image></swiper-item>
+      <swiper-item><image src='/images/banner4.png' class='ader'></image></swiper-item>
+      <swiper-item><image src='/images/banner5.png' class='ader'></image></swiper-item>
+    </swiper> 
+    <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' class='btn-shop'>
+      <text>立即点餐</text>
+    </button>
+    </view>
+  </view>
+</view>

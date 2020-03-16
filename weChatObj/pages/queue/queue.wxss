@@ -1,0 +1,165 @@
+/* pages/queue/queue.wxss */
+page{
+  height: 100%;
+  background-color: rgb(235, 235, 235)
+}
+.page-top{
+  height: 100%;
+}
+.title{
+  font-weight: bold;
+  font-size: 36rpx;
+  line-height: 120rpx;
+  padding-left: 22rpx;
+  color: #333
+}
+.wait{
+  width: 100%;
+  background: #fff;
+  height: 60px;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 20rpx;
+  color: #737373
+}
+.wait-order{
+  text-align: left;
+  margin-left: 20rpx
+}
+.wait-order text{
+  font-size: 36rpx;
+  color: #c7002b;
+  font-weight: bold;
+  font-style: italic;
+}
+.wait-mins{
+  text-align: right;
+  margin-right: 20rpx;
+}
+.wait-mins text{
+  font-size: 36rpx;
+  color: #c7002b;
+  font-weight: bold;
+  font-style: italic;
+}
+.page-content{
+  height: auto;
+  background: #fff;
+  margin: 0 10px 6px 10px;
+  border-radius: 20rpx;
+}
+.name{
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 32rpx;
+  width: 630rpx;
+  padding: 10rpx 40rpx;
+  color: #333;
+}
+.line{
+  border-bottom: 1rpx solid #ccc
+}
+.list{
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  height: 160rpx;
+}
+.list-img{
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 38rpx;
+}
+.list-img image{
+  width: 100%;
+  height: 100%;
+}
+.list-content{
+  width: 500rpx;
+  padding-left: 30rpx;
+}
+.list-top{
+  width: 100%;
+  height: 100rpx;
+}
+.foodName{
+  color: #4c4c4c;
+  /* 禁止换行 */
+  white-space: nowrap;
+  /* 文字超出部分显示为... */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 380rpx;
+  float: left;
+  margin-top: 4px;
+}
+.price{
+  width: 100rpx;
+  float: right;
+  font-size: 32rpx;
+  color: #797979;
+  padding-right: 10rpx;
+  text-align: right;
+  margin-right: 30rpx;
+}
+.foodcount{
+  color: #797979;
+  font-size: 26rpx;
+}
+.list-bottom{
+  font-size: 26rpx;
+  text-align: left;
+  line-height: 80rpx;
+  background: #fff;
+  border-top: 1rpx solid rgb(196, 196, 196);
+  /* position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100% */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* .list-bottom view{
+  margin: 0rpx 30rpx
+} */
+.list-bottom text{
+  margin-left: 440rpx;
+  font-size: 34rpx;
+  color: #c7002b
+}
+
+.order{
+
+}
+.bottom-cancel{
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: left;
+  line-height: 80rpx;
+  background: rgb(211, 211, 211);
+  color: #fff;
+  border-radius: 20rpx;
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-bottom: 5rpx;
+
+}
+.bottom-cancel view{
+  text-align: center;
+  margin: 0rpx 30rpx;
+}
+
+.bottom-pay{
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: left;
+  line-height: 80rpx;
+  background: #c7002b;
+  color: #fff;
+  border-radius: 20rpx;
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+.bottom-pay view{
+  text-align: center;
+  margin: 0rpx 30rpx;
+}

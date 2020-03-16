@@ -1,0 +1,95 @@
+/* pages/details/details.wxss */
+.page{
+  width: 100%;
+  height: 100%;
+}
+
+.page-img{
+  width: 100%;
+  height: 700rpx;
+}
+
+.page-img image{
+  width: 100%;
+  height: 100%;
+}
+
+.page-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+
+}
+
+.title image{
+  width:90rpx;
+  height: 90rpx;
+  float: left;
+  position: relative;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  top: 10rpx;
+}
+
+.title .name{
+  line-height: 120rpx;
+  font-size: 46rpx;
+  font-weight: bold;
+}
+
+.title .content{
+  line-height: 120rpx;
+  font-size: 32rpx;
+  color: #a7a7a7;
+  margin-left: 30rpx;
+}
+
+.sale{
+  font-size: 30rpx;
+  color: #a7a7a7;
+  margin: 0 20rpx;
+}
+
+.price{
+  color: red;
+  font-size: 36rpx;
+  margin-left: 20rpx;
+}
+
+.price .oldPrice{
+  color: #a7a7a7;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  text-decoration:line-through;
+}
+
+.price .discount{
+  text-decoration: none;
+  color: red;
+  font-size: 28rpx;
+  border: 1px solid orange;
+  margin-left: 30rpx;
+}
+
+.desc{
+  font-size: 32rpx;
+  color: #989898;
+  margin: 10rpx 15rpx;
+}
+
+.step{
+   /* 禁止换行 */
+  /* white-space: nowrap; */
+  /* 文字超出部分显示为省略号 */
+  /* text-overflow: ellipsis;  */
+  overflow: hidden;
+  font-size: 30rpx;
+  margin: 15rpx;
+  color: #474747;
+}

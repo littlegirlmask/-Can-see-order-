@@ -1,0 +1,66 @@
+<!--pages/queue/queue.wxml-->
+<view class='page'>
+  <view class='page-top'>
+    <view class='title'>
+      <text>订单已创建~ 小主请稍等（*--*）</text>
+    </view>
+    <view class='wait' style='position:{{positionValue}};top:{{topValue}}rpx;width:95%'>
+      <view class='wait-order'>
+        前面还有 <text>{{queue.queuecount}} </text>个订单 
+      </view>
+      <view class='wait-mins'>
+        预计还要等待 <text>{{queue.queuetime}}</text> 分钟
+      </view>
+    </view>
+  </view>
+
+  <view class='page-content'>
+    <view class='name'>看得见点餐
+      <view class='line'></view>
+    </view>
+    <block wx:for="{{queue.orderdetail}}" wx:key="item">
+      <view class='list'>
+        <view class='list-img'>
+          <image src='{{serveraddr}}/file/{{item.gimg}}'/>
+        </view>
+        <view class='list-content'>
+          <view class='list-top'>
+            <view class='foodName'>{{item.gname}}</view>
+            <view class='price'>￥{{item.odprice}}</view>
+          </view>
+          <view class='foodCount'>
+            X{{item.odcount}}
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <view class='list-bottom'>
+      合计：<text>￥{{queue.orders.ordertotleprice}}</text>
+    </view>
+  </view>
+
+  <!-- <view class='list-bottom'>
+    <view class='heji'>
+      合计：<text>￥{{queue.orders.ordertotleprice}}</text>
+    </view>
+    <view class='btn_clearOrder' bindtap='clearOrder'>清除订单</view>
+    <view class='btn_payOff' bindtap='payOff' data-sum="{{queue.orders.ordertotleprice}}">去支付</view>
+  </view> -->
+
+  <view class='order'>
+
+      <view class='bottom-cancel' >
+        <view class='cancel' bindtap='clearOrder' data-orderid="{{queue.orders.orderid}}">
+          取消订单
+        </view>
+      </view>
+
+      <view class='bottom-pay' >
+        <view class='pay' bindtap='payOff' data-sum="{{queue.orders.ordertotleprice}}" data-id="{{queue.orders.orderid}}">
+          去付款
+        </view>
+      </view>
+
+    </view>
+</view>
